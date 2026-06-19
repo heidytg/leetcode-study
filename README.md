@@ -279,4 +279,18 @@ go test ./...       # every problem, Go (per-package + harness/)
 | 973  | K Closest Points to Origin         | Medium     | Top-k by distance                | ✅ | ✅ | ✅ | —  |
 | 1046 | Last Stone Weight                  | Easy       | Max-heap repeated extraction     | ✅ | ✅ | ✅ | —  |
 
-_Remaining categories (Backtracking, Graphs, …) are scaffolded as we go._
+### Backtracking
+
+| #   | Problem                                | Difficulty | Pattern                          | Py | Go | TS | Kt |
+|-----|----------------------------------------|------------|----------------------------------|----|----|----|----|
+| 17  | Letter Combinations of a Phone Number  | Medium     | Cartesian-product backtracking   | ✅ | ✅ | ✅ | —  |
+| 39  | Combination Sum                        | Medium     | Backtracking with reuse          | ✅ | ✅ | ✅ | —  |
+| 40  | Combination Sum II                     | Medium     | Single-use + sorted dedup        | ✅ | ✅ | ✅ | —  |
+| 46  | Permutations                           | Medium     | Backtracking over choices        | ✅ | ✅ | ✅ | —  |
+| 51  | N-Queens                               | Hard       | Conflict-set backtracking        | ✅ | ✅ | ✅ | —  |
+| 78  | Subsets                                | Medium     | Include/exclude backtracking     | ✅ | ✅ | ✅ | —  |
+| 79  | Word Search                            | Medium     | Grid DFS backtracking            | ✅ | ✅ | ✅ | —  |
+| 90  | Subsets II                             | Medium     | Backtracking + dedup             | ✅ | ✅ | ✅ | —  |
+| 131 | Palindrome Partitioning                | Medium     | Prefix-cut backtracking          | ✅ | ✅ | ✅ | —  |
+
+_Remaining categories (Graphs, Advanced Graphs, …) are scaffolded as we go._

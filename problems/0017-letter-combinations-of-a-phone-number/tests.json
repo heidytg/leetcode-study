@@ -1,0 +1,9 @@
+{
+  "function": "letterCombinations",
+  "compare": "unordered",
+  "cases": [
+    { "args": ["23"], "expected": ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"] },
+    { "args": [""], "expected": [] },
+    { "args": ["2"], "expected": ["a", "b", "c"] }
+  ]
+}

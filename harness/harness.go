@@ -95,10 +95,32 @@ func runRoundtrip(t *testing.T, i int, c rawCase, fns map[string]any) {
 }
 
 func equal(a, b any, mode string) bool {
-	if mode == "sorted" || mode == "set" {
+	switch mode {
+	case "sorted", "set":
 		return reflect.DeepEqual(canon(a), canon(b))
+	case "unordered":
+		return reflect.DeepEqual(outerSort(a), outerSort(b))
 	}
 	return reflect.DeepEqual(a, b)
+}
+
+// outerSort sorts only the top-level list (inner element order preserved).
+func outerSort(v any) any {
+	data, _ := json.Marshal(v)
+	var parsed any
+	if err := json.Unmarshal(data, &parsed); err != nil {
+		return v
+	}
+	arr, ok := parsed.([]any)
+	if !ok {
+		return parsed
+	}
+	sort.Slice(arr, func(i, j int) bool {
+		bi, _ := json.Marshal(arr[i])
+		bj, _ := json.Marshal(arr[j])
+		return string(bi) < string(bj)
+	})
+	return arr
 }
 
 // canon round-trips through JSON to a generic shape, then recursively sorts every list

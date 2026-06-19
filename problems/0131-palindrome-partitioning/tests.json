@@ -1,0 +1,9 @@
+{
+  "function": "partition",
+  "compare": "unordered",
+  "cases": [
+    { "args": ["aab"], "expected": [["a", "a", "b"], ["aa", "b"]] },
+    { "args": ["a"], "expected": [["a"]] },
+    { "args": ["aba"], "expected": [["a", "b", "a"], ["aba"]] }
+  ]
+}

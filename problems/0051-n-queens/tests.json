@@ -1,0 +1,15 @@
+{
+  "function": "solveNQueens",
+  "compare": "unordered",
+  "cases": [
+    {
+      "args": [4],
+      "expected": [
+        [".Q..", "...Q", "Q...", "..Q."],
+        ["..Q.", "Q...", "...Q", ".Q.."]
+      ]
+    },
+    { "args": [1], "expected": [["Q"]] },
+    { "args": [2], "expected": [] }
+  ]
+}

@@ -30,7 +30,12 @@ def canon(value):
 
 
 def normalize(value, mode):
-    return canon(value) if mode in ("sorted", "set") else value
+    if mode in ("sorted", "set"):
+        return canon(value)
+    if mode == "unordered" and isinstance(value, list):
+        # sort only the top level; preserve each element's internal order
+        return sorted(value, key=lambda e: json.dumps(e, sort_keys=True))
+    return value
 
 
 def discover():

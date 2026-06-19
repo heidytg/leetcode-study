@@ -17,7 +17,16 @@ const canon = (v: unknown): unknown =>
   Array.isArray(v)
     ? v.map(canon).sort((a, b) => (JSON.stringify(a) < JSON.stringify(b) ? -1 : 1))
     : fixZero(v);
-const normalize = (v: unknown, mode = "exact"): unknown => (mode === "exact" ? clean(v) : canon(v));
+// outerSort: sort only the top-level list (inner element order preserved) — for
+// permutations/subsets/combinations where each item's order is meaningful but the
+// collection order is not.
+const outerSort = (v: unknown): unknown =>
+  Array.isArray(v)
+    ? v.map(clean).sort((a, b) => (JSON.stringify(a) < JSON.stringify(b) ? -1 : 1))
+    : clean(v);
+
+const normalize = (v: unknown, mode = "exact"): unknown =>
+  mode === "exact" ? clean(v) : mode === "unordered" ? outerSort(v) : canon(v);
 
 for (const [path, fixture] of Object.entries(fixtures)) {
   const slug = path.slice(2, path.indexOf("/tests.json")); // "./0001-two-sum/tests.json" -> "0001-two-sum"
