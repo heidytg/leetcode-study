@@ -259,4 +259,12 @@ go test ./...       # every problem, Go (per-package + harness/)
 | 572  | Subtree of Another Tree                      | Easy       | Same-tree check at each node     | ✅ | ✅ | ✅ | —  |
 | 1448 | Count Good Nodes in Binary Tree              | Medium     | DFS carrying path max            | ✅ | ✅ | ✅ | —  |
 
-_Remaining categories (Tries, Heap, …) are scaffolded as we go._
+### Tries
+
+| #   | Problem                                      | Difficulty | Pattern                          | Py | Go | TS | Kt |
+|-----|----------------------------------------------|------------|----------------------------------|----|----|----|----|
+| 208 | Implement Trie (Prefix Tree)                 | Medium     | Prefix tree                      | ✅ | ✅ | ✅ | —  |
+| 211 | Design Add and Search Words Data Structure   | Medium     | Trie + wildcard DFS              | ✅ | ✅ | ✅ | —  |
+| 212 | Word Search II                               | Hard       | Trie + grid DFS backtracking     | ✅ | ✅ | ✅ | —  |
+
+_Remaining categories (Heap, Backtracking, …) are scaffolded as we go._

@@ -1,0 +1,13 @@
+{
+  "function": "trieOps",
+  "compare": "exact",
+  "cases": [
+    {
+      "args": [
+        ["Trie", "insert", "search", "search", "startsWith", "insert", "search"],
+        [[], ["apple"], ["apple"], ["app"], ["app"], ["app"], ["app"]]
+      ],
+      "expected": [null, null, true, false, true, null, true]
+    }
+  ]
+}
