@@ -1,0 +1,9 @@
+{
+  "function": "reverseListArr",
+  "compare": "exact",
+  "cases": [
+    { "args": [[1, 2, 3, 4, 5]], "expected": [5, 4, 3, 2, 1] },
+    { "args": [[1, 2]], "expected": [2, 1] },
+    { "args": [[]], "expected": [] }
+  ]
+}

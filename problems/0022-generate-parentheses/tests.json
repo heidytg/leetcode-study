@@ -1,0 +1,9 @@
+{
+  "function": "generateParenthesis",
+  "compare": "sorted",
+  "cases": [
+    { "args": [1], "expected": ["()"] },
+    { "args": [2], "expected": ["(())", "()()"] },
+    { "args": [3], "expected": ["((()))", "(()())", "(())()", "()(())", "()()()"] }
+  ]
+}

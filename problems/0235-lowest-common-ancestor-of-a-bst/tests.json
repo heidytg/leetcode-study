@@ -1,0 +1,9 @@
+{
+  "function": "lcaArr",
+  "compare": "exact",
+  "cases": [
+    { "args": [[6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], 2, 8], "expected": 6 },
+    { "args": [[6, 2, 8, 0, 4, 7, 9, null, null, 3, 5], 2, 4], "expected": 2 },
+    { "args": [[2, 1], 2, 1], "expected": 2 }
+  ]
+}

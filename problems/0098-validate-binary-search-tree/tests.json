@@ -1,0 +1,10 @@
+{
+  "function": "isValidBSTArr",
+  "compare": "exact",
+  "cases": [
+    { "args": [[2, 1, 3]], "expected": true },
+    { "args": [[5, 1, 4, null, null, 3, 6]], "expected": false },
+    { "args": [[2, 2, 2]], "expected": false },
+    { "args": [[5, 4, 6, null, null, 3, 7]], "expected": false }
+  ]
+}

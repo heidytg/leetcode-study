@@ -1,0 +1,7 @@
+{
+  "function": "{{FN}}",
+  "compare": "exact",
+  "cases": [
+    { "args": [], "expected": null }
+  ]
+}

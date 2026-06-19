@@ -1,0 +1,10 @@
+{
+  "function": "characterReplacement",
+  "compare": "exact",
+  "cases": [
+    { "args": ["ABAB", 2], "expected": 4 },
+    { "args": ["AABABBA", 1], "expected": 4 },
+    { "args": ["A", 0], "expected": 1 },
+    { "args": ["AAAA", 0], "expected": 4 }
+  ]
+}

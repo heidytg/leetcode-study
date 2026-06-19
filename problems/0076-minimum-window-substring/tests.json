@@ -1,0 +1,10 @@
+{
+  "function": "minWindow",
+  "compare": "exact",
+  "cases": [
+    { "args": ["ADOBECODEBANC", "ABC"], "expected": "BANC" },
+    { "args": ["a", "a"], "expected": "a" },
+    { "args": ["a", "aa"], "expected": "" },
+    { "args": ["ab", "b"], "expected": "b" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "function": "addTwoNumbersArr",
+  "compare": "exact",
+  "cases": [
+    { "args": [[2, 4, 3], [5, 6, 4]], "expected": [7, 0, 8] },
+    { "args": [[0], [0]], "expected": [0] },
+    { "args": [[9, 9, 9, 9, 9, 9, 9], [9, 9, 9, 9]], "expected": [8, 9, 9, 9, 0, 0, 0, 1] }
+  ]
+}

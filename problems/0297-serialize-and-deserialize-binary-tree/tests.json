@@ -1,0 +1,10 @@
+{
+  "function": "codecArr",
+  "compare": "exact",
+  "cases": [
+    { "args": [[1, 2, 3, null, null, 4, 5]], "expected": [1, 2, 3, null, null, 4, 5] },
+    { "args": [[]], "expected": [] },
+    { "args": [[1]], "expected": [1] },
+    { "args": [[5, 4, 7, 3, null, 2, null, -1, null, 9]], "expected": [5, 4, 7, 3, null, 2, null, -1, null, 9] }
+  ]
+}

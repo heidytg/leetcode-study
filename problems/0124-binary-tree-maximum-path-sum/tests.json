@@ -1,0 +1,10 @@
+{
+  "function": "maxPathSumArr",
+  "compare": "exact",
+  "cases": [
+    { "args": [[1, 2, 3]], "expected": 6 },
+    { "args": [[-10, 9, 20, null, null, 15, 7]], "expected": 42 },
+    { "args": [[-3]], "expected": -3 },
+    { "args": [[2, -1]], "expected": 2 }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "function": "hasCycleArr",
+  "compare": "exact",
+  "cases": [
+    { "args": [[3, 2, 0, -4], 1], "expected": true },
+    { "args": [[1, 2], 0], "expected": true },
+    { "args": [[1], -1], "expected": false },
+    { "args": [[], -1], "expected": false }
+  ]
+}

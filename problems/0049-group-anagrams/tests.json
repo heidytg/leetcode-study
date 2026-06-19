@@ -1,0 +1,12 @@
+{
+  "function": "groupAnagrams",
+  "compare": "sorted",
+  "cases": [
+    {
+      "args": [["eat", "tea", "tan", "ate", "nat", "bat"]],
+      "expected": [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
+    },
+    { "args": [[""]], "expected": [[""]] },
+    { "args": [["a"]], "expected": [["a"]] }
+  ]
+}

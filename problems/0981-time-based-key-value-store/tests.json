@@ -1,0 +1,20 @@
+{
+  "function": "timeMapOps",
+  "compare": "exact",
+  "cases": [
+    {
+      "args": [
+        ["TimeMap", "set", "get", "get", "set", "get", "get"],
+        [[], ["foo", "bar", 1], ["foo", 1], ["foo", 3], ["foo", "bar2", 4], ["foo", 4], ["foo", 5]]
+      ],
+      "expected": [null, null, "bar", "bar", null, "bar2", "bar2"]
+    },
+    {
+      "args": [
+        ["TimeMap", "get", "set", "get"],
+        [[], ["x", 1], ["x", "a", 5], ["x", 2]]
+      ],
+      "expected": [null, "", null, ""]
+    }
+  ]
+}

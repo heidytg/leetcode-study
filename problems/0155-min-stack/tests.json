@@ -1,0 +1,20 @@
+{
+  "function": "minStackOps",
+  "compare": "exact",
+  "cases": [
+    {
+      "args": [
+        ["MinStack", "push", "push", "push", "getMin", "pop", "top", "getMin"],
+        [[], [-2], [0], [-3], [], [], [], []]
+      ],
+      "expected": [null, null, null, null, -3, null, 0, -2]
+    },
+    {
+      "args": [
+        ["MinStack", "push", "push", "getMin", "pop", "getMin"],
+        [[], [1], [2], [], [], []]
+      ],
+      "expected": [null, null, null, 1, null, 1]
+    }
+  ]
+}

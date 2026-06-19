@@ -1,0 +1,11 @@
+{
+  "function": "codec",
+  "compare": "roundtrip",
+  "cases": [
+    { "args": [["lint", "code", "love", "you"]], "expected": ["lint", "code", "love", "you"] },
+    { "args": [[""]], "expected": [""] },
+    { "args": [[]], "expected": [] },
+    { "args": [["we", "say", ":", "yes"]], "expected": ["we", "say", ":", "yes"] },
+    { "args": [["3#x", "12"]], "expected": ["3#x", "12"] }
+  ]
+}

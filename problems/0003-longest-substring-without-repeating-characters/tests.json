@@ -1,0 +1,11 @@
+{
+  "function": "lengthOfLongestSubstring",
+  "compare": "exact",
+  "cases": [
+    { "args": ["abcabcbb"], "expected": 3 },
+    { "args": ["bbbbb"], "expected": 1 },
+    { "args": ["pwwkew"], "expected": 3 },
+    { "args": [""], "expected": 0 },
+    { "args": ["dvdf"], "expected": 3 }
+  ]
+}

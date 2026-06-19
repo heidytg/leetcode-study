@@ -1,0 +1,11 @@
+{
+  "function": "checkInclusion",
+  "compare": "exact",
+  "cases": [
+    { "args": ["ab", "eidbaooo"], "expected": true },
+    { "args": ["ab", "eidboaoo"], "expected": false },
+    { "args": ["adc", "dcda"], "expected": true },
+    { "args": ["a", "a"], "expected": true },
+    { "args": ["abc", "ab"], "expected": false }
+  ]
+}
