@@ -267,4 +267,16 @@ go test ./...       # every problem, Go (per-package + harness/)
 | 211 | Design Add and Search Words Data Structure   | Medium     | Trie + wildcard DFS              | ✅ | ✅ | ✅ | —  |
 | 212 | Word Search II                               | Hard       | Trie + grid DFS backtracking     | ✅ | ✅ | ✅ | —  |
 
-_Remaining categories (Heap, Backtracking, …) are scaffolded as we go._
+### Heap / Priority Queue
+
+| #    | Problem                            | Difficulty | Pattern                          | Py | Go | TS | Kt |
+|------|------------------------------------|------------|----------------------------------|----|----|----|----|
+| 215  | Kth Largest Element in an Array    | Medium     | Selection (heap/quickselect)     | ✅ | ✅ | ✅ | —  |
+| 295  | Find Median from Data Stream       | Hard       | Two balanced heaps               | ✅ | ✅ | ✅ | —  |
+| 355  | Design Twitter                     | Medium     | Maps + recency merge             | ✅ | ✅ | ✅ | —  |
+| 621  | Task Scheduler                     | Medium     | Greedy frequency counting        | ✅ | ✅ | ✅ | —  |
+| 703  | Kth Largest Element in a Stream    | Easy       | Size-k min-heap                  | ✅ | ✅ | ✅ | —  |
+| 973  | K Closest Points to Origin         | Medium     | Top-k by distance                | ✅ | ✅ | ✅ | —  |
+| 1046 | Last Stone Weight                  | Easy       | Max-heap repeated extraction     | ✅ | ✅ | ✅ | —  |
+
+_Remaining categories (Backtracking, Graphs, …) are scaffolded as we go._
