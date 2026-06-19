@@ -1,0 +1,9 @@
+{
+  "function": "ladderLength",
+  "compare": "exact",
+  "cases": [
+    { "args": ["hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]], "expected": 5 },
+    { "args": ["hit", "cog", ["hot", "dot", "dog", "lot", "log"]], "expected": 0 },
+    { "args": ["a", "c", ["a", "b", "c"]], "expected": 2 }
+  ]
+}

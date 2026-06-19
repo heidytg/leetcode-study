@@ -293,4 +293,22 @@ go test ./...       # every problem, Go (per-package + harness/)
 | 90  | Subsets II                             | Medium     | Backtracking + dedup             | ✅ | ✅ | ✅ | —  |
 | 131 | Palindrome Partitioning                | Medium     | Prefix-cut backtracking          | ✅ | ✅ | ✅ | —  |
 
-_Remaining categories (Graphs, Advanced Graphs, …) are scaffolded as we go._
+### Graphs
+
+| #   | Problem                                | Difficulty | Pattern                          | Py | Go | TS | Kt |
+|-----|----------------------------------------|------------|----------------------------------|----|----|----|----|
+| 127 | Word Ladder                            | Hard       | BFS on implicit word graph       | ✅ | ✅ | ✅ | —  |
+| 130 | Surrounded Regions                     | Medium     | Border DFS marking               | ✅ | ✅ | ✅ | —  |
+| 133 | Clone Graph                            | Medium     | Traversal + original→clone map   | ✅ | ✅ | ✅ | —  |
+| 200 | Number of Islands                      | Medium     | Grid flood fill                  | ✅ | ✅ | ✅ | —  |
+| 207 | Course Schedule                        | Medium     | Cycle detection / topo           | ✅ | ✅ | ✅ | —  |
+| 210 | Course Schedule II                     | Medium     | Topological sort (Kahn)          | ✅ | ✅ | ✅ | —  |
+| 261 | Graph Valid Tree                       | Medium     | Union-Find tree check            | ✅ | ✅ | ✅ | —  |
+| 286 | Walls and Gates                        | Medium     | Multi-source BFS                 | ✅ | ✅ | ✅ | —  |
+| 323 | Number of Connected Components         | Medium     | Union-Find counting              | ✅ | ✅ | ✅ | —  |
+| 417 | Pacific Atlantic Water Flow            | Medium     | Reverse border flood             | ✅ | ✅ | ✅ | —  |
+| 684 | Redundant Connection                   | Medium     | Union-Find cycle edge            | ✅ | ✅ | ✅ | —  |
+| 695 | Max Area of Island                     | Medium     | Flood fill component size        | ✅ | ✅ | ✅ | —  |
+| 994 | Rotting Oranges                        | Medium     | Multi-source BFS by level        | ✅ | ✅ | ✅ | —  |
+
+_Remaining categories (Advanced Graphs, 1-D DP, …) are scaffolded as we go._

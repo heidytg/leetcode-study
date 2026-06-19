@@ -1,0 +1,22 @@
+{
+  "function": "solve",
+  "compare": "exact",
+  "cases": [
+    {
+      "args": [[
+        ["X", "X", "X", "X"],
+        ["X", "O", "O", "X"],
+        ["X", "X", "O", "X"],
+        ["X", "O", "X", "X"]
+      ]],
+      "expected": [
+        ["X", "X", "X", "X"],
+        ["X", "X", "X", "X"],
+        ["X", "X", "X", "X"],
+        ["X", "O", "X", "X"]
+      ]
+    },
+    { "args": [[["X"]]], "expected": [["X"]] },
+    { "args": [[["O", "O"], ["O", "O"]]], "expected": [["O", "O"], ["O", "O"]] }
+  ]
+}
