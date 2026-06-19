@@ -311,4 +311,15 @@ go test ./...       # every problem, Go (per-package + harness/)
 | 695 | Max Area of Island                     | Medium     | Flood fill component size        | ✅ | ✅ | ✅ | —  |
 | 994 | Rotting Oranges                        | Medium     | Multi-source BFS by level        | ✅ | ✅ | ✅ | —  |
 
-_Remaining categories (Advanced Graphs, 1-D DP, …) are scaffolded as we go._
+### Advanced Graphs
+
+| #    | Problem                            | Difficulty | Pattern                          | Py | Go | TS | Kt |
+|------|------------------------------------|------------|----------------------------------|----|----|----|----|
+| 269  | Alien Dictionary                   | Hard       | Constraints → graph → topo sort  | ✅ | ✅ | ✅ | —  |
+| 332  | Reconstruct Itinerary              | Hard       | Eulerian path (Hierholzer)       | ✅ | ✅ | ✅ | —  |
+| 743  | Network Delay Time                 | Medium     | Dijkstra shortest path           | ✅ | ✅ | ✅ | —  |
+| 778  | Swim in Rising Water               | Hard       | Minimax-path Dijkstra            | ✅ | ✅ | ✅ | —  |
+| 787  | Cheapest Flights Within K Stops    | Medium     | Bellman-Ford (k+1 rounds)        | ✅ | ✅ | ✅ | —  |
+| 1584 | Min Cost to Connect All Points     | Medium     | MST (Prim's)                     | ✅ | ✅ | ✅ | —  |
+
+_Remaining categories (1-D DP, 2-D DP, …) are scaffolded as we go._

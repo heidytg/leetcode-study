@@ -1,0 +1,14 @@
+{
+  "function": "findItinerary",
+  "compare": "exact",
+  "cases": [
+    {
+      "args": [[["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]],
+      "expected": ["JFK", "MUC", "LHR", "SFO", "SJC"]
+    },
+    {
+      "args": [[["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]],
+      "expected": ["JFK", "ATL", "JFK", "SFO", "ATL", "SFO"]
+    }
+  ]
+}

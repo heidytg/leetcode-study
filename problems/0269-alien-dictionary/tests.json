@@ -1,0 +1,10 @@
+{
+  "function": "alienOrder",
+  "compare": "exact",
+  "cases": [
+    { "args": [["wrt", "wrf", "er", "ett", "rftt"]], "expected": "wertf" },
+    { "args": [["z", "x"]], "expected": "zx" },
+    { "args": [["z", "x", "z"]], "expected": "" },
+    { "args": [["abc", "ab"]], "expected": "" }
+  ]
+}
